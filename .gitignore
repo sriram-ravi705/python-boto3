@@ -1,1 +1,3 @@
-s3_bucket_list/venv/
+basic_operation/venv/
+s3_operations/venv/
+.idea
