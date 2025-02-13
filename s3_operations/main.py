@@ -5,6 +5,10 @@ s3_client = boto3.client('s3')
 # creating a bucket
 response = s3_client.create_bucket(Bucket="my-bucket-08022025")
 
+# list all buckets
+response = s3_client.list_buckets()
+print(response["Buckets"][1]["Name"])
+
 # upload a file in a bucket
 response = s3_client.upload_file('boto3.txt','my-bucket-08022025','boto3.txt')
 
